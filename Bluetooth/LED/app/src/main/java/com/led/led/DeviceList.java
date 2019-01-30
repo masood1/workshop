@@ -52,7 +52,7 @@ public class DeviceList extends ActionBarActivity
         }
         else if(!myBluetooth.isEnabled())
         {
-                //Ask to the user turn the bluetooth on
+                //Ask user turn the bluetooth on
                 Intent turnBTon = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                 startActivityForResult(turnBTon,1);
         }
